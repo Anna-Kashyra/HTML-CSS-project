@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #03045E;
+}
+
+/*-----------------------Header----------------------*/
+
+.header_container {
+    background: #F7F8FD;
+}
+
+header {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+header a {
+    display: inline-block;
+    padding: 42px 0;
+    text-decoration: none;
+    color: #03045E;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header a:hover {
+    transform: scale(1.1);
+}
+
+header button {
+    width: 120px;
+    height: 49px;
+    padding: 11px 35px;
+    border: none;
+    border-radius: 5px;
+    background: #03045E;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header button:hover {
+    transform: scale(1.1);
+}
+
+/*-----------------------Hero------------------------*/
+.hero {
+    background: #F7F8FD;
+}
+
+.hero_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 92px 0 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 36px;
+}
+
+.hero_text h1 {
+    max-width: 556px;
+    font-family: Ubuntu, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 68px;
+}
+
+.hero_text p {
+    max-width: 556px;
+    color: rgba(3, 4, 94, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero_text a {
+    height: 60px;
+    padding: 17px 38px;
+    border-radius: 5px;
+    background: #0098FF;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.hero_text a:hover {
+    transform: scale(1.1);
+}
+
+/*-----------------------Search------------------------*/
+
+.search {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_left {
+    border-right: 1px solid rgba(3, 4, 94, 0.1);
+    width: 100%;
+}
+
+.search_left h3 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.form_container {
+    display: flex;
+    align-items: flex-start;
+}
+
+input[type="search"] {
+    width: 380px;
+    height: 60px;
+    padding: 18px 20px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    background: #F6F6F6;
+    color: rgba(3, 4, 94, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input[type="search"]::placeholder {
+    color: rgba(3, 4, 94, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input[type="submit"] {
+    width: 160px;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding: 18px 38px;
+    border-radius: 0 5px 5px 0;
+    background: #0098FF;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+.search_right {
+    display: grid;
+    grid-template-columns: repeat(3, 95px);
+    grid-template-rows: repeat(2, 51px);
+    column-gap: 117px;
+    row-gap: 32px;
+    padding-left: 69px;
+}
+
+.search_right_item h5 {
+    color: #0098FF;
+    font-family: Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.search_right_item p {
+    color: rgba(3, 4, 94, 0.3);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*-----------------------Services------------------------*/
+
+.services {
+    background: rgba(246, 246, 246, 0.4);
+    padding: 150px 0;
+}
+
+.services h2 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 255px);
+    row-gap: 80px;
+}
+
+.services_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.services_item svg {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background: #F6F6F6;
+}
+
+.services_item h5 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.services_item p {
+    max-width: 407px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(3, 4, 94, 0.5);
+}
+
+/*-----------------------Reviews------------------------*/
+
+.reviews {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.reviews h2 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.reviews_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.reviews_item {
+    max-width: 404px;
+    background: rgba(246, 246, 246, 0.4);
+    padding: 50px 40px;
+    text-align: center;
+
+}
+
+.reviews_item p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgba(3, 4, 94, 0.5);
+}
+
+.reviews_item h5 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.reviews h5 + p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.reviews_dots {
+    text-align: center;
+}
+
+/*-----------------------Statistics------------------------*/
+
+.statistics {
+    background: #0098FF;
+    padding: 100px 0;
+}
+
+.statistics_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.statistics_item {
+    width: 23%;
+    color: #FFF;
+    text-align: center;
+}
+
+.statistics_item p {
+    font-size: 20px;
+}
+
+.statistics_item .large {
+    font-family: Ubuntu,sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/*-----------------------Plans------------------------*/
+
+.plans {
+    padding: 150px 0;
+}
+
+.plans h2 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.plans_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plans_item {
+    width: 25%;
+    padding: 40px 0 50px;
+    text-align: center;
+    color: rgba(3, 4, 94, 0.5);
+    transition: 0.5s;
+}
+
+.plans_duration {
+    color: #0098FF;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.plans_price {
+    font-family: Ubuntu, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #03045E;
+}
+
+.plans_item ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    font-size: 14px;
+
+}
+
+.plans_item li {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.plans_item span {
+    font-weight: 600;
+}
+
+.cta_btn {
+    width: 150px;
+    height: 49px;
+    padding: 11px 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #03045E;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.plans_item:hover {
+    background: #0098FF;
+    color: #FFFFFF;
+}
+
+.plans_item:hover .plans_duration {
+    color: #FFFFFF;
+}
+
+.plans_item:hover .plans_price {
+    color: #FFFFFF;
+}
+
+/*-----------------------Footer------------------------*/
+
+.footer_container {
+    background: #F6F6F6;
+}
+
+.footer_top {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 400px 290px 290px 300px;
+    grid-template-rows: 1fr;
+    align-items: flex-start;
+}
+
+.footer_logo {
+    max-width: 297px;
+}
+
+.footer_logo svg {
+    margin-bottom: 24px;
+}
+
+.footer_logo p {
+    color: rgba(3, 4, 94, 0.5);
+}
+
+.quick_links li, .footer_services li,
+.footer_contacts li, .footer_social li{
+    list-style-type: none;
+    height: 40px;
+}
+
+.quick_links li:first-of-type,
+.footer_services li:first-of-type,
+.footer_contacts li:first-of-type,
+.footer_social li:first-of-type{
+    color: #000;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 700;
+}
+
+.quick_links a, .footer_services a,
+.footer_contacts a, .footer_social a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(3, 4, 94, 0.5);
+    line-height: 40px;
+}
+
+.footer_contacts {
+    margin-bottom: 30px;
+}
+
+.footer_social a {
+    padding-right: 20px;
+}
+
+.footer_bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer_bottom a {
+    text-decoration: none;
+    color: #03045E;
+}
+
